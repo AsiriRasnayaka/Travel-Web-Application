@@ -27,6 +27,15 @@ const Navbar = () => {
             <Link to="/destinations" className="text-gray-600 hover:text-brand-600 font-medium transition">
               Destinations
             </Link>
+            <Link to="/travel-guide" className="text-gray-600 hover:text-brand-600 font-medium transition">
+              Travel Guide
+            </Link>
+            <Link to="/about" className="text-gray-600 hover:text-brand-600 font-medium transition">
+              About Us
+            </Link>
+            <Link to="/contact" className="text-gray-600 hover:text-brand-600 font-medium transition">
+              Contact
+            </Link>
             
             {user ? (
               <div className="flex items-center space-x-4">

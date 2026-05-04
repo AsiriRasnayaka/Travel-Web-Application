@@ -6,6 +6,9 @@ import Destinations from './pages/Destinations';
 import DestinationDetails from './pages/DestinationDetails';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
+import TravelGuide from './pages/TravelGuide';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/destinations" element={<Destinations />} />
             <Route path="/destinations/:id" element={<DestinationDetails />} />
+            <Route path="/travel-guide" element={<TravelGuide />} />
+            <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
