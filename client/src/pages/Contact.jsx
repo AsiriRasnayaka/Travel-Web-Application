@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="contact-info-section">
           <h2>Contact Information</h2>
           <p className="contact-info-subtitle">Fill up the form and our Team will get back to you within 24 hours.</p>
-          
+
           <div className="contact-methods">
             <div className="contact-method">
               <div className="icon-circle">
@@ -24,11 +24,11 @@ const Contact = () => {
               </div>
               <div className="method-details">
                 <h3>Phone</h3>
-                <p>+1 (555) 123-4567</p>
-                <p>+1 (555) 987-6543</p>
+                <p>+94 70 131 1273</p>
+                <p>+94 77 072 9022</p>
               </div>
             </div>
-            
+
             <div className="contact-method">
               <div className="icon-circle">
                 <Mail size={20} />
@@ -39,15 +39,15 @@ const Contact = () => {
                 <p>support@travelapp.com</p>
               </div>
             </div>
-            
+
             <div className="contact-method">
               <div className="icon-circle">
                 <MapPin size={20} />
               </div>
               <div className="method-details">
                 <h3>Office</h3>
-                <p>123 Travel Boulevard</p>
-                <p>New York, NY 10001, USA</p>
+                <p>123 SrilankaExplorers</p>
+                <p>Colombo, Sri Lanka</p>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Contact = () => {
             <div className="social-icon"><Globe size={20} /></div>
             <div className="social-icon"><Clock size={20} /></div>
           </div>
-          
+
           <div className="decorative-circle-1"></div>
           <div className="decorative-circle-2"></div>
         </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 <label htmlFor="lastName">Last Name</label>
               </div>
             </div>
-            
+
             <div className="form-row">
               <div className="input-group">
                 <input type="email" id="email" placeholder=" " required />
@@ -84,12 +84,12 @@ const Contact = () => {
                 <label htmlFor="phone">Phone Number</label>
               </div>
             </div>
-            
+
             <div className="input-group full-width">
               <textarea id="message" rows="4" placeholder=" " required></textarea>
               <label htmlFor="message">Your Message</label>
             </div>
-            
+
             <button type="submit" className="submit-btn">
               <span>Send Message</span>
               <Send size={18} className="send-icon" />
