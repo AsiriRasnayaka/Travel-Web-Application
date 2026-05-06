@@ -40,25 +40,27 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 tracking-tight">
             Discover the Magic of <span className="text-brand-400">Sri Lanka</span>
           </h1>
           <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto leading-relaxed">
             From pristine beaches to ancient ruins and lush tea gardens. Start your unforgettable journey today.
           </p>
 
-          <form onSubmit={handleSearch} className="bg-white p-2 rounded-full flex items-center max-w-2xl mx-auto shadow-xl">
-            <Search className="h-6 w-6 text-gray-400 ml-4" />
-            <input
-              type="text"
-              placeholder="Where do you want to go? (e.g. Ella, Beach)"
-              className="flex-grow px-4 py-3 outline-none text-gray-700 bg-transparent"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            />
+          <form onSubmit={handleSearch} className="bg-white p-2 rounded-2xl md:rounded-full flex flex-col md:flex-row items-stretch md:items-center max-w-2xl mx-auto shadow-xl gap-2 md:gap-0">
+            <div className="flex items-center flex-grow px-2 md:px-0">
+              <Search className="h-6 w-6 text-gray-400 md:ml-4 flex-shrink-0" />
+              <input
+                type="text"
+                placeholder="Where do you want to go? (e.g. Ella, Beach)"
+                className="w-full px-4 py-3 outline-none text-gray-700 bg-transparent"
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+              />
+            </div>
             <button
               type="submit"
-              className="bg-brand-600 text-white px-8 py-3 rounded-full font-medium hover:bg-brand-700 transition"
+              className="bg-brand-600 text-white px-8 py-3 rounded-xl md:rounded-full font-medium hover:bg-brand-700 transition w-full md:w-auto"
             >
               Search
             </button>

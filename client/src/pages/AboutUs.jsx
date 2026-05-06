@@ -19,7 +19,7 @@ const AboutUs = () => {
             <img
               src="https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Sri Lanka landscape"
-              className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
+              className="w-full h-64 md:h-[500px] object-cover rounded-2xl shadow-xl"
             />
           </div>
           <div className="flex flex-col justify-center">
