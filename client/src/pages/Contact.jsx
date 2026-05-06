@@ -1,30 +1,101 @@
 import React from 'react';
+import { Mail, Phone, MapPin, Send, Clock, Globe } from 'lucide-react';
+import './Contact.css';
 
 const Contact = () => {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-6">Contact Us</h1>
-      <p className="text-lg text-gray-600 mb-8">
-        Have questions or need assistance? We're here to help!
-      </p>
-      <div className="bg-white rounded-xl shadow-sm p-8 max-w-2xl border border-gray-100">
-        <form className="space-y-6">
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500" />
+    <div className="contact-page">
+      <div className="contact-hero">
+        <div className="contact-hero-content">
+          <h1>Get in Touch</h1>
+          <p>We'd love to hear from you. Our friendly team is always here to chat.</p>
+        </div>
+      </div>
+
+      <div className="contact-container">
+        <div className="contact-info-section">
+          <h2>Contact Information</h2>
+          <p className="contact-info-subtitle">Fill up the form and our Team will get back to you within 24 hours.</p>
+          
+          <div className="contact-methods">
+            <div className="contact-method">
+              <div className="icon-circle">
+                <Phone size={20} />
+              </div>
+              <div className="method-details">
+                <h3>Phone</h3>
+                <p>+1 (555) 123-4567</p>
+                <p>+1 (555) 987-6543</p>
+              </div>
+            </div>
+            
+            <div className="contact-method">
+              <div className="icon-circle">
+                <Mail size={20} />
+              </div>
+              <div className="method-details">
+                <h3>Email</h3>
+                <p>hello@travelapp.com</p>
+                <p>support@travelapp.com</p>
+              </div>
+            </div>
+            
+            <div className="contact-method">
+              <div className="icon-circle">
+                <MapPin size={20} />
+              </div>
+              <div className="method-details">
+                <h3>Office</h3>
+                <p>123 Travel Boulevard</p>
+                <p>New York, NY 10001, USA</p>
+              </div>
+            </div>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500" />
+
+          <div className="social-proof">
+            <div className="social-icon"><Globe size={20} /></div>
+            <div className="social-icon"><Clock size={20} /></div>
           </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Message</label>
-            <textarea rows={4} className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-500 focus:ring-brand-500"></textarea>
-          </div>
-          <button type="submit" className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-brand-600 hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-500">
-            Send Message
-          </button>
-        </form>
+          
+          <div className="decorative-circle-1"></div>
+          <div className="decorative-circle-2"></div>
+        </div>
+
+        <div className="contact-form-section">
+          <form className="contact-form">
+            <div className="form-row">
+              <div className="input-group">
+                <input type="text" id="firstName" placeholder=" " required />
+                <label htmlFor="firstName">First Name</label>
+              </div>
+              <div className="input-group">
+                <input type="text" id="lastName" placeholder=" " required />
+                <label htmlFor="lastName">Last Name</label>
+              </div>
+            </div>
+            
+            <div className="form-row">
+              <div className="input-group">
+                <input type="email" id="email" placeholder=" " required />
+                <label htmlFor="email">Email Address</label>
+              </div>
+              <div className="input-group">
+                <input type="tel" id="phone" placeholder=" " />
+                <label htmlFor="phone">Phone Number</label>
+              </div>
+            </div>
+            
+            <div className="input-group full-width">
+              <textarea id="message" rows="4" placeholder=" " required></textarea>
+              <label htmlFor="message">Your Message</label>
+            </div>
+            
+            <button type="submit" className="submit-btn">
+              <span>Send Message</span>
+              <Send size={18} className="send-icon" />
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );
